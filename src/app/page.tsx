@@ -3,7 +3,7 @@ import Footer from './Components/Footer';
 
 export default function Home() {
     return (
-        <div>
+        <div className="bg-white text-black min-h-screen">
             <Navbar />
             <header className="text-center py-10">
                 <h1 className="text-4xl font-bold">Welcome to WeDeepClean</h1>
