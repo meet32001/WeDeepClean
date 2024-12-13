@@ -1,46 +1,45 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from "./HeroSection.module.css";
+import heroStyles from "./HeroSection.module.css";
 
-const HeroSection = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+type Offer = {
+    title: string;
+    subtitle: string;
+    image: string;
+    buttons: {
+        text: string;
+        action: string;
+    }[];
+};
 
-    const offers = [
+const HeroSection: React.FC = () => {
+    const [currentSlide, setCurrentSlide] = useState<number>(0);
+
+    const offers: Offer[] = [
         {
             title: "Detailed & Trusted Cleaning Service",
             subtitle: "Leave the house cleaning chores to us",
-            image: "/Logo.jpeg",
+            image: "/Cleaner.webp",
             buttons: [
                 { text: "Book Service", action: "/book-service" },
                 { text: "Contact Us", action: "/contact" },
             ],
         },
-        // {
-        //     title: "Special Discount on Spring Cleaning",
-        //     subtitle: "Get 20% off on your first spring cleaning service!",
-        //     image: "/DiscountOffer.jpeg",
-        //     buttons: [
-        //         { text: "Claim Offer", action: "/claim-offer" },
-        //         { text: "Learn More", action: "/learn-more" },
-        //     ],
-        // },
     ];
 
     const currentOffer = offers[currentSlide];
 
-    // Automatic slider
     useEffect(() => {
         if (offers.length > 1) {
             const sliderInterval = setInterval(() => {
                 setCurrentSlide((prev) => (prev + 1) % offers.length);
-            }, 5000); // Change slide every 5 seconds
+            }, 5000);
 
-            return () => clearInterval(sliderInterval); // Cleanup on unmount
+            return () => clearInterval(sliderInterval);
         }
     }, [offers]);
 
-    // Navigate slider
     const handlePrevSlide = () => {
         setCurrentSlide((prev) => (prev === 0 ? offers.length - 1 : prev - 1));
     };
@@ -50,20 +49,19 @@ const HeroSection = () => {
     };
 
     return (
-        <section className={`${styles.heroSection}`}>
+        <section className={heroStyles.heroSection}>
             {/* Left Content */}
-            <div className={`${styles.leftContent}`}>
-                <h1 className={`${styles.title}`}>{currentOffer.title}</h1>
-                <p className={`${styles.subtitle}`}>{currentOffer.subtitle}</p>
-                {/* Buttons */}
-                <div className={`${styles.buttonContainer}`}>
+            <div className={heroStyles.leftContent}>
+                <h1 className={heroStyles.title}>{currentOffer.title}</h1>
+                <p className={heroStyles.subtitle}>{currentOffer.subtitle}</p>
+                <div className={heroStyles.buttonContainer}>
                     {currentOffer.buttons.map((button, index) => (
                         <button
                             key={index}
                             className={
                                 index === 0
-                                    ? `${styles.bookButton}`
-                                    : `${styles.contactButton}`
+                                    ? heroStyles.bookButton
+                                    : heroStyles.contactButton
                             }
                             onClick={() => (window.location.href = button.action)}
                         >
@@ -74,15 +72,12 @@ const HeroSection = () => {
             </div>
 
             {/* Right Content */}
-            <div className={`${styles.rightContent}`}>
-                {/* Decorative Background Ellipse */}
-                <div className={`${styles.backgroundEllipse}`}></div>
-
-                {/* Image */}
+            <div className={heroStyles.rightContent}>
+                <div className={heroStyles.backgroundEllipse}></div>
                 <img
                     src={currentOffer.image}
                     alt={currentOffer.title}
-                    className={`${styles.heroImage}`}
+                    className={heroStyles.heroImage}
                 />
             </div>
 
@@ -90,13 +85,13 @@ const HeroSection = () => {
             {offers.length > 1 && (
                 <>
                     <button
-                        className={`${styles.arrow} ${styles.leftArrow}`}
+                        className={`${heroStyles.arrow} ${heroStyles.leftArrow}`}
                         onClick={handlePrevSlide}
                     >
                         &#10094;
                     </button>
                     <button
-                        className={`${styles.arrow} ${styles.rightArrow}`}
+                        className={`${heroStyles.arrow} ${heroStyles.rightArrow}`}
                         onClick={handleNextSlide}
                     >
                         &#10095;
