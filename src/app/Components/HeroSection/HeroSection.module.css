@@ -1,0 +1,143 @@
+/* Hero Section Styles */
+.heroSection {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    width: 100%;
+    height: 88.7vh;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .heroSection {
+        flex-direction: row;
+    }
+}
+
+/* Left Content */
+.leftContent {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .leftContent {
+        width: 52%;
+        text-align: left;
+        align-items: flex-start; /* Align text to the left on larger screens */
+    }
+}
+
+.title {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #14532d; /* Tailwind green-800 */
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #4b5563; /* Tailwind gray-600 */
+}
+
+/* Buttons */
+.buttonContainer {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+@media (min-width: 768px) {
+    .buttonContainer {
+        justify-content: flex-start; /* Align buttons to the left on larger screens */
+    }
+}
+
+.bookButton {
+    width: 10rem;
+    background-color: #54844b; /* Custom green */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.bookButton:hover {
+    background-color: #3f6c3b;
+}
+
+.contactButton {
+    width: 10rem;
+    background-color: #54844b; /* Custom green */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: #3f6c3b; /* Tailwind gray-100 */
+}
+
+/* Right Content */
+.rightContent {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .rightContent {
+        width: 60%;
+    }
+}
+
+/* Decorative Background Ellipse */
+.backgroundEllipse {
+    position: absolute;
+    top: 50%;
+    left: 0%; /* Adjust position as needed */
+    transform: translateY(-50%);
+    width: 88.75rem;
+    height: 43.5rem;
+    background-color: #cad3bb;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Hero Image */
+.heroImage {
+    position: relative; /* Ensure image stays on top of the circle */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Adjust size as necessary */
+    z-index: 1; /* Place image above the circle */
+}
