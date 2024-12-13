@@ -1,14 +1,14 @@
-/* Hero Section Styles */
+/* Hero Section */
 .heroSection {
     /* border: 2px solid red; */
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 5rem;
-    width: 100%;
-    height: 88.7vh;
     position: relative;
+    width: 100vw;
+    height: 88.7vh;
+    padding-left: 2rem;
     overflow: hidden;
 }
 
@@ -28,14 +28,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
 
 @media (min-width: 768px) {
     .leftContent {
-        width: 52%;
+        width: 52%; /* Adjusted for better balance */
         text-align: left;
-        align-items: flex-start; /* Align text to the left on larger screens */
+        align-items: flex-start;
     }
 }
 
@@ -54,15 +54,15 @@
 }
 
 .subtitle {
+    margin-top: 0.5rem;
     font-size: 1.125rem;
     color: #4b5563; /* Tailwind gray-600 */
 }
 
 /* Buttons */
 .buttonContainer {
-    /* border: 2px solid red; */
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
+    justify-content: center;
     gap: 3rem;
     margin-top: 3rem;
     margin-left: 4rem;
@@ -70,7 +70,7 @@
 
 @media (min-width: 768px) {
     .buttonContainer {
-        justify-content: flex-start; /* Align buttons to the left on larger screens */
+        justify-content: flex-start;
     }
 }
 
@@ -90,7 +90,7 @@
 
 .contactButton {
     width: 10rem;
-    background-color: #54844b; /* Custom green */
+    background-color: #54844b;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
@@ -99,12 +99,12 @@
 }
 
 .contactButton:hover {
-    background-color: #3f6c3b; /* Tailwind gray-100 */
+    background-color: #3f6c3b;
 }
 
 /* Right Content */
 .rightContent {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: 100%;
     position: relative;
@@ -116,7 +116,7 @@
 
 @media (min-width: 768px) {
     .rightContent {
-        width: 60%;
+        width: 60%; /* Adjusted for better balance */
     }
 }
 
@@ -124,10 +124,10 @@
 .backgroundEllipse {
     position: absolute;
     top: 50%;
-    left: 0%; /* Adjust position as needed */
+    left: 0%;
     transform: translateY(-50%);
     width: 88.75rem;
-    height: 43.5rem;
+    height: 47.5rem;
     background-color: #cad3bb;
     border-radius: 50%;
     z-index: 0;
@@ -135,9 +135,69 @@
 
 /* Hero Image */
 .heroImage {
-    position: relative; /* Ensure image stays on top of the circle */
+    position: relative;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 80%; /* Adjust size as necessary */
-    z-index: 1; /* Place image above the circle */
+    max-width: 80%;
+    z-index: 1;
+}
+
+/* Slider Controls */
+.sliderControls {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.activeControl {
+    color: #54844b; /* Active dot color */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.activeControl:hover {
+    transform: scale(1.2);
+}
+
+.inactiveControl {
+    color: #cad3bb; /* Inactive dot color */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.inactiveControl:hover {
+    transform: scale(1.2);
+}
+
+/* Arrow Buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: black; /* Black arrow color */
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #333; /* Darker black shade on hover */
+}
+
+.leftArrow {
+    left: 1rem; /* Position the left arrow */
+}
+
+.rightArrow {
+    right: 2rem; /* Position the right arrow */
 }
