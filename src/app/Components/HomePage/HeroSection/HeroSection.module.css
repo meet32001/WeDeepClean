@@ -143,6 +143,7 @@
 
 /* Hero Image */
 .heroImage {
+    box-shadow: -20px 20px 25px rgba(84, 132, 75, 0.5); /* Greenish shadow */
     position: relative;
     max-width: 80%;
     max-height: 90%;
