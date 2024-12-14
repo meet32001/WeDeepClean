@@ -8,11 +8,11 @@ const OurStory: React.FC = () => {
             {/* Left Image */}
             <div className={storyStyles.imageContainer}>
                 <div className={storyStyles.imageBackground}></div>
-                {/* <img
-                    src="/Logo.jpeg" // Replace with your actual image path
+                <img
+                    src="/Cleaner.webp" // Replace with your actual image path
                     alt="Our Story"
                     className={storyStyles.storyImage}
-                /> */}
+                />
             </div>
 
             {/* Right Content */}
