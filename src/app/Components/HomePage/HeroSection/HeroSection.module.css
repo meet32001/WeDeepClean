@@ -198,7 +198,8 @@
 }
 
 .arrow:hover {
-    color: #333; /* Darker black shade on hover */
+    color: #3f6c3b; /* Darker green on hover */
+    transform: translateY(-50%) scale(1.2); /* Zoom effect */ /* Darker black shade on hover */
 }
 
 .leftArrow {

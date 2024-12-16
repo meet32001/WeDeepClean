@@ -51,7 +51,7 @@
 /* Story Image */
 .storyImage {
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Rounded corners, adjust as needed */
     box-shadow: -20px 20px 25px rgba(84, 132, 75, 0.5); /* Greenish shadow */
