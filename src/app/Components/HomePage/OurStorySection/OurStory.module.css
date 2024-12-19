@@ -1,12 +1,12 @@
 /* Our Story Section */
 .ourStorySection {
-    /* border: 2px solid red; Debugging border */
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 88vh;
+    height: 88.5vh;
     padding: 5rem 2rem; /* Reduced padding for better alignment */
 }
 

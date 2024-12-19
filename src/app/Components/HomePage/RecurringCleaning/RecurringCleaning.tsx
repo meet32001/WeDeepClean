@@ -1,40 +1,56 @@
+"use client";
+
+import React from "react";
 import styles from "./RecurringCleaning.module.css";
 
-const RecurringCleaning = () => {
+const RecurringCleaning: React.FC = () => {
+    const cleaningOptions = [
+        {
+            title: "On Demand Cleaning",
+            icon: "/calendar-icon.svg", // Replace with your icon path
+        },
+        {
+            title: "Monthly Cleaning (10% OFF)",
+            icon: "/calendar-icon.svg",
+        },
+        {
+            title: "Bi - Weekly Cleaning (15% OFF)",
+            icon: "/calendar-icon.svg",
+        },
+        {
+            title: "Weekly Cleaning (20% OFF)",
+            icon: "/calendar-icon.svg",
+        },
+    ];
+
     return (
         <section className={styles.recurringSection}>
-            {/* Heading */}
-            <h2 className={styles.heading}>
+            <h2 className={styles.title}>
                 Book a Recurring Cleaning and Save Time and Money!
             </h2>
+            <div className={styles.optionsContainer}>
+                {cleaningOptions.map((option, index) => (
+                    <React.Fragment key={index}>
+                        {/* Individual Card */}
+                        <div className={styles.optionCard}>
+                            <img
+                                src={option.icon}
+                                alt={option.title}
+                                className={styles.icon}
+                            />
+                            <h3 className={styles.optionTitle}>
+                                {option.title}
+                            </h3>
+                        </div>
 
-            {/* Background Image Container */}
-            <div className={styles.backgroundImage}>
-                {/* Left Arrow */}
-                <button className={`${styles.arrow} ${styles.leftArrow}`}>
-                    &#10094;
-                </button>
-
-                {/* Cards Container */}
-                <div className={styles.cardsContainer}>
-                    <div className={styles.card}>
-                        <h3>On Demand Cleaning</h3>
-                    </div>
-                    <div className={styles.card}>
-                        <h3>Monthly Cleaning (10% OFF)</h3>
-                    </div>
-                    <div className={styles.card}>
-                        <h3>Bi-Weekly Cleaning (15% OFF)</h3>
-                    </div>
-                    <div className={styles.card}>
-                        <h3>Weekly Cleaning (20% OFF)</h3>
-                    </div>
-                </div>
-
-                {/* Right Arrow */}
-                <button className={`${styles.arrow} ${styles.rightArrow}`}>
-                    &#10095;
-                </button>
+                        {/* Arrow between cards, except after the last one */}
+                        {index < cleaningOptions.length - 1 && (
+                            <div className={styles.arrow}>
+                                &#8594; {/* HTML Entity for Right Arrow */}
+                            </div>
+                        )}
+                    </React.Fragment>
+                ))}
             </div>
         </section>
     );

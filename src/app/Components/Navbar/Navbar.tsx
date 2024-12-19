@@ -30,7 +30,7 @@ const Navbar = () => {
             {/* Logo Section */}
             <div className={styles.logoContainer}>
                 <img 
-                    src="/Logo.jpeg" 
+                    src="" 
                     alt="WeDeepClean Logo" 
                     className={styles.logo} 
                 />
