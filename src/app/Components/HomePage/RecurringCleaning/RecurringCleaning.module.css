@@ -1,28 +1,30 @@
-/* Section Container */
 .recurringSection {
-    /* border: 2px solid red;  */
+    /* border: 2px solid red; */
     text-align: center;
-    padding: 2rem 1rem;
-    background-color: white; /* Light background color */
+    padding: 2rem 0;
 }
 
 /* Title */
 .title {
     font-size: 2rem;
     font-weight: bold;
-    color: #14532d; /* Tailwind green-800 */
+    color: #14532d;
     margin-bottom: 2rem;
 }
 
 /* Options Container */
 .optionsContainer {
+    /* border: 2px solid blue; */
+    background-image: url('../../../../../public/picturesofwebsite/banner.png');
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1600px;
+    padding: 2rem;
+    background-repeat: no-repeat;
 }
 
 /* Individual Card */
@@ -38,6 +40,7 @@
     width: 200px;
     height: 180px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .optionCard:hover {
@@ -52,15 +55,6 @@
     margin-bottom: 1rem;
 }
 
-/* Option Title */
-.optionTitle {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #333333;
-    text-align: center;
-    line-height: 1.4;
-}
-
 /* Arrow */
 .arrow {
     font-size: 2rem;
@@ -69,4 +63,33 @@
     align-items: center;
     justify-content: center;
     margin: 0 0.5rem; /* Space between arrow and cards */
+}
+
+/* Option Card Text Container */
+.cardText {
+    display: flex;
+    flex-direction: column; /* Arrange title and discount vertically */
+    align-items: center;
+    margin-top: 0.5rem;
+    text-align: center; /* Center-align the text */
+}
+
+/* Option Title */
+.optionTitle {
+    font-weight: bold;
+    font-size: 0.9rem; /* Slightly smaller font size for title */
+    font-weight: 500; /* Medium weight for title */
+    color: #14532d;
+    margin-bottom: 0.3rem; /* Add spacing between title and discount */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+/* Discount */
+.discount {
+    font-size: 0.8rem; /* Slightly smaller font size for discount */
+    font-weight: bold; /* Bold weight for emphasis */
+    color: black; /* Green color for discount text */
+    margin-top: 0.2rem; /* Add spacing above the discount */
 }

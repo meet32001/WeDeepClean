@@ -29,11 +29,7 @@ const Navbar = () => {
         <nav className={`${styles.navbar}`}>
             {/* Logo Section */}
             <div className={styles.logoContainer}>
-                <img 
-                    src="" 
-                    alt="WeDeepClean Logo" 
-                    className={styles.logo} 
-                />
+                <img src="/logo.jpeg" alt="WeDeepClean Logo" className={styles.logo} />
             </div>
 
             {/* Menu Section */}
