@@ -1,20 +1,10 @@
-import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer';
-import HeroSection from './Components/HomePage/HeroSection/HeroSection';
-import OurStory from "./Components/HomePage/OurStorySection/OurStory";
-import WhyUsSlider from './Components/HomePage/WhyUsSection/WhyUsSection';
-import RecurringCleaning from './Components/HomePage/RecurringCleaning/RecurringCleaning';
+import Home from './pages/HomePage';
+import LoginPage from '../app/pages/LoginPage/LoginPage';
 
-
-export default function Home() {
+export default function Page() {
     return (
         <div className="bg-white text-red min-h-screen">
-            <Navbar />
-            <HeroSection/>
-            <OurStory />
-            <WhyUsSlider />
-            <RecurringCleaning />
-            <Footer />
+            <Home />
         </div>
     );
 }

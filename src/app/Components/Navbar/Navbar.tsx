@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link"; // Import Link from next/link
 import styles from "./Navbar.module.css"; // Import the CSS module
 
 const Navbar = () => {
@@ -29,13 +30,13 @@ const Navbar = () => {
         <nav className={`${styles.navbar}`}>
             {/* Logo Section */}
             <div className={styles.logoContainer}>
-                <img src="/logo.jpeg" alt="WeDeepClean Logo" className={styles.logo} />
+                <img src="../../../../public/WeDeepClean.png" alt="WeDeepClean Logo" className={styles.logo} />
             </div>
 
             {/* Menu Section */}
             <ul className={styles.menu}>
-                <li><a href="/" className={styles.menuItem}>HOME</a></li>
-                <li><a href="/our-story" className={styles.menuItem}>OUR STORY</a></li>
+                <li><Link href="/" className={styles.menuItem}>HOME</Link></li>
+                <li><Link href="/our-story" className={styles.menuItem}>OUR STORY</Link></li>
                 <li className={`${styles.dropdown} relative`} ref={dropdownRef}>
                     <button
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -49,64 +50,68 @@ const Navbar = () => {
                     {isDropdownOpen && (
                         <ul className={styles.dropdownMenu}>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/house-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/house-cleaning" onClick={handleItemClick}>
                                     House Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/condo-apartment-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/condo-apartment-cleaning" onClick={handleItemClick}>
                                     Condo And Apartment Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/commercial-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/commercial-cleaning" onClick={handleItemClick}>
                                     Commercial Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/deep-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/deep-cleaning" onClick={handleItemClick}>
                                     Deep Cleaning Service
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/move-in-move-out" onClick={handleItemClick}>
+                                <Link href="/services/move-in-move-out" onClick={handleItemClick}>
                                     Move In Move Out Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/eco-friendly-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/eco-friendly-cleaning" onClick={handleItemClick}>
                                     Green And Eco-Friendly Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/post-renovation-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/post-renovation-cleaning" onClick={handleItemClick}>
                                     Post Renovation Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/cutlery-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/cutlery-cleaning" onClick={handleItemClick}>
                                     Cutlery Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/cleaning-seniors" onClick={handleItemClick}>
+                                <Link href="/services/cleaning-seniors" onClick={handleItemClick}>
                                     Cleaning Services For Seniors
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/spring-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/spring-cleaning" onClick={handleItemClick}>
                                     Spring Cleaning
-                                </a>
+                                </Link>
                             </li>
                             <li className={styles.dropdownItem}>
-                                <a href="/services/seasonal-cleaning" onClick={handleItemClick}>
+                                <Link href="/services/seasonal-cleaning" onClick={handleItemClick}>
                                     Seasonal Cleaning
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     )}
                 </li>
-                <li><a href="/login" className={styles.menuItem}>LOG IN</a></li>
+                <li>
+                    <Link href="" className={styles.menuItem}>
+                        LOG IN
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

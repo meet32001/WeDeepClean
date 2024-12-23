@@ -1,0 +1,124 @@
+/* Slider Section */
+.sliderSection {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 6rem;
+}
+
+/* Slider Container */
+.slider {
+  border: 0.1rem solid black;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-width: 1440px;
+  border-radius: 3rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background Image */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+/* Content Section */
+.content {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding-left: 5rem;
+  z-index: 2;
+}
+
+/* Content Container */
+.contentContainer {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: left;
+  max-width: 400px;
+  
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #14532d;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Book Button */
+.bookButton {
+  padding: 0.8rem 2rem;
+  background-color: #14532d;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookButton:hover {
+  background-color: #0f4221;
+}
+
+/* Arrows */
+.prevArrow,
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(20, 83, 45, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: background-color 0.3s ease;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  background-color: #0f4221;
+}
+
+.prevArrow {
+  left: 1rem;
+}
+
+.nextArrow {
+  right: 1rem;
+}
