@@ -5,6 +5,7 @@ import OurStory from "../Components/OurStorySection/OurStory";
 import WhyUsSlider from '../Components/WhyUsSection/WhyUsSection';
 import RecurringCleaning from '../Components/RecurringCleaning/RecurringCleaning';
 import Slider from '../Components/SliderSection/SliderSection';
+import CleaningServiceSection from '../Components/MobileDisplaySection/MobileDisplaySection';
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <WhyUsSlider />
             <RecurringCleaning />
             <Slider />
+            <CleaningServiceSection />
             <Footer />
         </div>
     );

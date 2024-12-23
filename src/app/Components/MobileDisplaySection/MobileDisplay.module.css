@@ -1,0 +1,77 @@
+/* Section */
+.section {
+    border: 2px solid red;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: white; /* Light background for contrast */
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsive layout */
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem; /* Space between text and image */
+  }
+  
+  /* Text Container */
+  .textContainer {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .highlightText {
+    color: #14532d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1.5rem;
+  }
+  
+  .benefitsList {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .benefitsList li {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .highlight {
+    color: #14532d;
+    font-weight: bold;
+  }
+  
+  /* Image Container */
+  .imageContainer {
+    /* border: 2px solid blue; */
+    height: 88vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%; /* Adjust container height */
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 1000px; /* Increase the maximum size */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
