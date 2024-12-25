@@ -30,7 +30,7 @@ const Navbar = () => {
         <nav className={`${styles.navbar}`}>
             {/* Logo Section */}
             <div className={styles.logoContainer}>
-                <img src="../../../../public/WeDeepClean.png" alt="WeDeepClean Logo" className={styles.logo} />
+                <img src="/picturesofwebsite/WeDeepClean.png" alt="WeDeepClean Logo" className={styles.logo} />
             </div>
 
             {/* Menu Section */}

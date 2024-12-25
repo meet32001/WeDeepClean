@@ -1,11 +1,12 @@
 import Navbar from '../Components/Navbar/Navbar';
-import Footer from '../Components/Footer';
+import Footer from '../Components/Footer/Footer';
 import HeroSection from '../Components/HeroSection/HeroSection';
 import OurStory from "../Components/OurStorySection/OurStory";
 import WhyUsSlider from '../Components/WhyUsSection/WhyUsSection';
 import RecurringCleaning from '../Components/RecurringCleaning/RecurringCleaning';
 import Slider from '../Components/SliderSection/SliderSection';
 import CleaningServiceSection from '../Components/MobileDisplaySection/MobileDisplaySection';
+import CustomerReviewSection from '../Components/CustomerReviewSection/CustomerReviewSection';
 
 export default function Home() {
     return (
@@ -14,9 +15,10 @@ export default function Home() {
             <HeroSection/>
             <OurStory />
             <WhyUsSlider />
-            <RecurringCleaning />
             <Slider />
+            <RecurringCleaning />
             <CleaningServiceSection />
+            <CustomerReviewSection />
             <Footer />
         </div>
     );
