@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f7f8f7;
+}
+
+.loginForm {
+  flex: 1;
+  max-width: 500px;
+  background-color: #cad3bb;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.loginButton {
+  width: 40%;
+  padding: 0.75rem;
+  background-color: #2e7d32;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 28%;
+}
+
+.loginButton:hover {
+  background-color: #256927;
+}
+
+.socialLogin {
+  color: #000;
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+.socialTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Increased spacing between buttons */
+  align-items: flex-start; /* Align buttons to the left */
+  margin-top: 1.5rem; /* Space above the buttons */
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  gap: 0.75rem; /* Space between icon and text */
+  width: 100%; /* Full width of the container */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.socialButton:hover {
+  background-color: #f3f4f6; /* Light hover background */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.google {
+  color: #ea4335; /* Google red */
+}
+
+.facebook {
+  color: #1877f2; /* Facebook blue */
+}
+
+.apple {
+  color: #000; /* Apple black */
+}
+
+.socialButton i {
+  font-size: 1.5rem; /* Larger icon size */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.socialButton span {
+  font-size: 1rem;
+  color: #333; /* Text color */
+  font-weight: 500; /* Slightly bold text */
+}
+
+.register {
+  text-align: center; /* Centers the text */
+  margin-top: 2rem; /* Adds margin at the top */
+  font-size: 0.875rem; /* Keeps the font size consistent */
+  color: #333; /* Adjusts the color for better visibility */
+}
+
+.register a {
+  color: #2e7d32; /* Keeps the link color green */
+  text-decoration: none;
+  font-weight: bold; /* Makes the link stand out */
+}
+
+.register a:hover {
+  text-decoration: underline; /* Adds underline on hover for clarity */
+}
+
+.imageSection {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundRectangle {
+  position: absolute;
+  left: 62%;
+  top: 9rem;
+  width: 350px;
+  height: 500px;
+  background-color: #ffffff;
+  border-width: 14px;
+  border-color: #cad3bb;
+  z-index: 0;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  height: 70%;
+  top: 40px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%; /* Limit the width to 50% of the container */
+  max-height: 560px; /* Limit the height */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}

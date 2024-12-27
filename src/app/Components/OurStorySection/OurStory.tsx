@@ -4,7 +4,7 @@ import storyStyles from "./OurStory.module.css";
 
 const OurStory: React.FC = () => {
     return (
-        <section className={storyStyles.ourStorySection}>
+        <section id="our-story" className={storyStyles.ourStorySection}>
             {/* Left Image */}
             <div className={storyStyles.imageContainer}>
                 <div className={storyStyles.imageBackground}></div>
