@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./RegistrationPage.module.css";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const RegistrationPage: React.FC = () => {
   return (
@@ -49,10 +48,10 @@ const RegistrationPage: React.FC = () => {
             </button>
           </form>
           <p className={styles.loginPrompt}>
-            Already Login? <a href="/login">Login</a>
+            Already Login? <a href="/LoginPage">Login</a>
           </p>
         </div>
-        <div className={styles.imageSection}>
+        <div className={styles.imageContainer}>
           <div className={styles.backgroundRectangle}></div>
           <img
             src="/picturesofwebsite/login.png"

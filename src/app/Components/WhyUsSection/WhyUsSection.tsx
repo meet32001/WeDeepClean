@@ -151,27 +151,27 @@ const WhyUsSlider: React.FC = () => {
   const items = [
     {
       title: "Quality Cleaning",
-      description: "Lorem ipsum odor amet, consectetur adipiscing elit.",
+      description: "Experience top-notch cleaning services with attention to detail.",
       icon: <QualityCheckedIcon />, // Replace icon with the new SVG Component
     },
     {
       title: "Insured & Vetted",
-      description: "Lorem ipsum odor amet, consectetur adipiscing elit.",
+      description: "Our team is fully insured and rigorously vetted for your peace of mind.",
       icon: <InsuredVettedIcon />, // Another icon
     },
     {
       title: "Flexible Scheduling",
-      description: "Lorem ipsum odor amet, consectetur adipiscing elit.",
+      description: "We work around your schedule to make cleaning hassle-free.",
       icon: <FlexibleSchedulingIcon />, // Another icon
     },
     {
       title: "Affordable Pricing",
-      description: "Lorem ipsum odor amet, consectetur adipiscing elit.",
+      description: "Premium cleaning services at prices that fit your budget.",
       icon: <AffordablePricingIcon />, // Another icon
     },
     {
       title: "Customer Satisfaction",
-      description: "Lorem ipsum odor amet, consectetur adipiscing elit.",
+      description: "Your happiness is our top priority in every cleaning job.",
       icon: <CustomerSatisfactionIcon />, // Another icon
     },
   ];

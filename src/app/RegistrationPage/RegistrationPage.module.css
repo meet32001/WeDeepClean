@@ -1,8 +1,9 @@
 .registrationContainer {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
   gap: 2rem;
   background-color: #f7f8f7;
 }
@@ -103,11 +104,18 @@
 }
 
 .imageSection {
+  flex: 1;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 50%; /* Limit the width to 50% of the container */
   max-height: 560px; /* Limit the height */
-  overflow: hidden; /* Ensure content doesn't overflow */
 }

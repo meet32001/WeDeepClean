@@ -1,5 +1,5 @@
 .sliderSection {
-    /* border: 2px solid black; */
+
     text-align: center;
     padding: 1rem 1rem;
     background-color: white;
@@ -14,6 +14,7 @@
 
 /* Slider Container */
 .sliderContainer {
+    border: 2px solid red;
     left: 4.5rem;
     width: 90%;
     height: 300px;
@@ -43,6 +44,8 @@
 
 /* Slider Items */
 .sliderItem {
+    padding: 1rem;
+    /* border: 2px solid red; */
     flex-shrink: 0;
     width: 250px;
     height: 200px;
@@ -106,7 +109,7 @@
 
 /* Description */
 .itemDescription {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #4b5563;
     text-align: center;
 }
