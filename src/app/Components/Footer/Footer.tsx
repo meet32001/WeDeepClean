@@ -1,10 +1,17 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation"; // Use navigation API for explicit routing
 import styles from "./Footer.module.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const FooterSection: React.FC = () => {
+  const router = useRouter();
+
+  const navigateToTerms = () => {
+    router.push("/TermsAndConditions");
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -17,8 +24,9 @@ const FooterSection: React.FC = () => {
             />
           </div>
           <p className={styles.description}>
-            Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem
-            lorem sit sed elitr sit no, sed kasd et ipsum dolor duo dolor.
+            WeDeepClean provides premium cleaning services for homes and
+            businesses, ensuring spotless spaces and customer satisfaction. Your
+            space, our priority.
           </p>
           <div className={styles.socialIcons}>
             <a href="#" aria-label="Twitter">
@@ -43,10 +51,8 @@ const FooterSection: React.FC = () => {
         <div className={styles.linksSection}>
           <h4 className={styles.sectionTitle}>Quick Links</h4>
           <ul>
-            <li>
-              <a href="#">
-                <i className="fas fa-chevron-right"></i> Terms & Conditions
-              </a>
+            <li onClick={navigateToTerms} style={{ cursor: "pointer" }}>
+              <i className="fas fa-chevron-right"></i> Terms & Conditions
             </li>
             <li>
               <a href="#">

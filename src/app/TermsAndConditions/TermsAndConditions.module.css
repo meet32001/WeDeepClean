@@ -1,0 +1,92 @@
+.termsContainer {
+  background-color: #f0f8f0; /* Light green background */
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #14532d; /* Green background */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* White text for contrast */
+  margin: 0;
+}
+
+/* Content Section */
+.content {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+
+.content h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #14532d; /* Green for headers */
+  border-bottom: 2px solid #d4d4d4;
+  padding-bottom: 0.5rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content p strong {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Lists (if needed in content) */
+.content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.content ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+/* Links */
+.content a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .termsContainer {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .content h2 {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+}

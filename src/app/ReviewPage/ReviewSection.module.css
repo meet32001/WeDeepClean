@@ -1,0 +1,109 @@
+/* Review Section */
+.reviewSection {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #14532d;
+    margin-bottom: 2rem;
+  }
+  
+  /* Video Container */
+  .videoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding:30px;
+  }
+  
+  /* Video Card */
+  .videoCard {
+    width: 100%;
+    height: 450px;
+    max-width: 300px;
+    background-color: #cad3bb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .videoCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 128, 0, 0.3);
+  }
+  
+  /* Video */
+  .video {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  .reviewSection {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .title1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #14532d;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+  }
+  
+  /* Masonry Container */
+  .masonryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 1rem;
+    padding:  2rem;
+  }
+  
+  /* Masonry Items */
+  .masonryItem {
+    background-color: #cad3bb; 
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .masonryItem:hover {
+    transform: scale(1);
+    box-shadow: 0px 8px 15px rgba(2, 54, 15, 0.3);
+  }
+
+  /* Specific Sizes for Some Items */
+  .masonryItem:nth-child(1) {
+    grid-row: span 2;
+  }
+  
+  .masonryItem:nth-child(2) {
+    grid-column: span 2;
+  }
+  
+  .masonryItem:nth-child(4) {
+    grid-row: span 2;
+  }
+  
+  .masonryItem:nth-child(6) {
+    grid-column: span 2;
+  }
+
+  .masonryItem:nth-child(8) {
+    grid-column: span 2;
+  }
+
+  masonryItem:nth-child(10) {
+    grid-column: span 2;
+  }

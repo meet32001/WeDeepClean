@@ -12,7 +12,6 @@
 }
 
 .reviewsContainer {
-  /* border: 2px solid red; */
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -26,7 +25,7 @@
   border-radius: 8px;
   overflow: hidden;
   width: 280px;
-  height: 400px; /* Match the video height */
+  height: 430px; /* Match the video height */
   text-align: center;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

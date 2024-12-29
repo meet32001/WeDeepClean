@@ -39,7 +39,6 @@
 
 /* Content Section */
 .content {
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -50,12 +49,11 @@
 
 /* Content Container */
 .contentContainer {
-  /* border: 0.1rem solid black; */
   background: rgba(255, 255, 255, 0.8);
   padding: 2rem;
   border-radius: 2rem;
   text-align: left;
-  max-width: 400px;
+  max-width: 450px;
   
 }
 

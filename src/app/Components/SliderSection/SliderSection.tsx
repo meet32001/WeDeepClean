@@ -7,37 +7,44 @@ const slides = [
   {
     title: "Seasonal Cleaning",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim tincidunt, accumsan erat nisi, non eu lacus ligula. Curabitur euismod enim sed tellus ornare, vitae facilisis mauris luctus. Curare ridiculus at laoreet massa pellentesque tristique.",
+      "Keep your home fresh and clean all year round with our seasonal cleaning services. Perfect for Winter, Spring, Fall, or holiday prep.",
     image: "/picturesofwebsite/hero_page_slider.png",
     buttonText: "Book Service",
   },
   {
-    title: "Weekly Cleaning",
+    title: "Home Deep Cleaning",
     description:
-      "Weekly cleaning services tailored to your needs, ensuring a spotless home every time.",
+      "Experience a thorough and detailed cleaning that reaches every corner of your home for a truly pristine result.",
     image: "/picturesofwebsite/hero_page_slider.png",
-    buttonText: "Learn More",
-  },
-  {
-    title: "Monthly Cleaning",
-    description:
-      "Save time and money with our monthly cleaning services. Book now to experience the difference!",
-    image: "/picturesofwebsite/hero_page_slider.png",
-    buttonText: "Book Now",
-  },
-  {
-    title: "Deep Cleaning",
-    description:
-      "Thorough and detailed cleaning for every nook and cranny of your home.",
-    image: "/picturesofwebsite/hero_page_slider.png",
-    buttonText: "Get Started",
+    buttonText: "Book Service",
   },
   {
     title: "Move-In/Out Cleaning",
     description:
-      "Perfect cleaning solutions when moving into a new home or leaving the old one.",
+      "Ease the stress of moving with our specialized cleaning services for new or old homes. Leave it spotless!",
     image: "/picturesofwebsite/hero_page_slider.png",
-    buttonText: "Contact Us",
+    buttonText: "Book Service",
+  },
+  {
+    title: "Post-Renovation Cleaning",
+    description:
+      "Clear away dust and debris with our expert post-renovation cleaning, leaving your home sparkling and ready to enjoy.",
+    image: "/picturesofwebsite/hero_page_slider.png",
+    buttonText: "Book Service",
+  },
+  {
+    title: "Cleaning for Seniors",
+    description:
+      "Compassionate cleaning services designed to help seniors maintain a safe, clean, and comfortable living environment.",
+    image: "/picturesofwebsite/hero_page_slider.png",
+    buttonText: "Book Service",
+  },
+  {
+    title: "Commercial Cleaning",
+    description:
+      "Create a professional and clean environment for your business with our customizable commercial cleaning solutions.",
+    image: "/picturesofwebsite/hero_page_slider.png",
+    buttonText: "Book Service",
   },
 ];
 
