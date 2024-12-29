@@ -1,33 +1,98 @@
 /* Main Container */
 .privacyContainer {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem;
-    text-align: center;
+  background-color: #f0f8f0; /* Light green background */
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #14532d; /* Green background */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Content Section */
+.content {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+
+.content h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #14532d;
+  border-bottom: 2px solid #d4d4d4;
+  padding-bottom: 0.5rem;
+}
+
+.content h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.content ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+/* Links */
+.content a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacyContainer {
+    padding: 1.5rem;
   }
-  
-  /* Header Styles */
-  .header {
-    margin-bottom: 2rem;
-  }
-  
+
   .title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #14532d;
-    text-align: center;
+    font-size: 1.75rem;
   }
-  
-  /* Content Section */
+
+  .content h2 {
+    font-size: 1.25rem;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+
   .content {
-    text-align: left;
-    line-height: 1.6;
-    font-size: 1rem;
-    color: #333;
+    font-size: 0.9rem;
   }
-  
-  .content p {
-    margin-bottom: 1rem;
-  }
-  
-  
+}

@@ -10,6 +10,7 @@ const FooterSection: React.FC = () => {
 
   const navigateToTerms = () => {
     router.push("/TermsAndConditions");
+    router.push("/PrivacyPolicy");
   };
 
   return (
@@ -54,10 +55,8 @@ const FooterSection: React.FC = () => {
             <li onClick={navigateToTerms} style={{ cursor: "pointer" }}>
               <i className="fas fa-chevron-right"></i> Terms & Conditions
             </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-chevron-right"></i> Privacy Policy
-              </a>
+            <li onClick={navigateToTerms} style={{ cursor: "pointer" }}>
+              <i className="fas fa-chevron-right"></i> Privacy Policy
             </li>
             <li>
               <a href="#">
