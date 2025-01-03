@@ -1,0 +1,296 @@
+/* Main Container */
+.partnerContainer {
+  color: black;
+  /* border: 2px solid purple; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.heroSection {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  max-width: 100%;
+  width: 90%;
+  flex-wrap: wrap;
+  height: 71vh; /* Occupies the full viewport height */
+}
+
+/* Image Container */
+.imageContainer {
+  height: 60vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.partnerImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2; /* Ensures the image stays on top of the square */
+}
+
+.squareBackground {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  width: 70%;
+  height: 85%;
+  background-color: #fff;
+  border: 10px solid #cad3bb;
+  z-index: 1;
+}
+
+/* Text Container */
+.textContainer {
+  flex: 1;
+  text-align: left;
+  max-width: 90%;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #14532d;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.signUpButton {
+  width: 10rem;
+  background-color: #54844b; /* Custom green */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.signUpButton:hover {
+  background-color: #0f4221;
+}
+
+/* Form Section */
+.formSection {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  width: 90%;
+  /* border: 2px solid yellow; */
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+}
+
+.title1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #14532d;
+  text-align: center;
+}
+
+/* Form Wrapper */
+.formWrapper {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Form */
+.form {
+  /* border: 2px solid blue; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.inputGroup {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.inputField {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.question {
+  font-size: 1rem;
+  color: #555;
+}
+
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.radioGroup label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.textArea {
+  color: black;
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.recaptcha {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.submitButton {
+  padding: 1rem;
+  background-color: #14532d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0f4221;
+}
+
+/* Side Image */
+.imageContainer1 {
+  /* border: 2px solid red; */
+  height: 73.3vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.image1 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.squareBackground1 {
+  position: absolute;
+  top: -4%;
+  right: 1%;
+  width: 70%;
+  height: 87%;
+  background-color: #fff;
+  border: 10px solid #cad3bb;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .heroSection {
+    flex-direction: column;
+  }
+
+  .imageContainer,
+  .textContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .squareBackground {
+    width: 60%;
+    height: 60%;
+    top: 8%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partnerImage {
+    max-width: 90%;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+  }
+
+  .title1 {
+    font-size: 2rem;
+  }
+
+  .squareBackground1 {
+    width: 50%;
+    height: 50%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .signUpButton {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .title1 {
+    font-size: 1.8rem;
+  }
+
+  .squareBackground {
+    display: none;
+  }
+
+  .squareBackground1 {
+    display: none;
+  }
+}

@@ -1,17 +1,19 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation"; // Use navigation API for explicit routing
+import { useRouter } from "next/navigation";
 import styles from "./Footer.module.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const FooterSection: React.FC = () => {
   const router = useRouter();
 
-  const navigateToTerms = () => {
-    router.push("/TermsAndConditions");
-    router.push("/PrivacyPolicy");
-  };
+  // Navigation functions for each page
+  const navigateToTerms = () => router.push("/TermsAndConditions");
+  const navigateToPrivacy = () => router.push("/PrivacyPolicy");
+  const navigateToJoinTeam = () => router.push("/JoinOurTeam");
+  const navigateToReviews = () => router.push("/ReviewPage");
+  const navigateToPartnership = () => router.push("/PartnerWithUs");
 
   return (
     <footer className={styles.footer}>
@@ -55,23 +57,17 @@ const FooterSection: React.FC = () => {
             <li onClick={navigateToTerms} style={{ cursor: "pointer" }}>
               <i className="fas fa-chevron-right"></i> Terms & Conditions
             </li>
-            <li onClick={navigateToTerms} style={{ cursor: "pointer" }}>
+            <li onClick={navigateToPrivacy} style={{ cursor: "pointer" }}>
               <i className="fas fa-chevron-right"></i> Privacy Policy
             </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-chevron-right"></i> Join Our Team
-              </a>
+            <li onClick={navigateToJoinTeam} style={{ cursor: "pointer" }}>
+              <i className="fas fa-chevron-right"></i> Join Our Team
             </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-chevron-right"></i> Reviews
-              </a>
+            <li onClick={navigateToReviews} style={{ cursor: "pointer" }}>
+              <i className="fas fa-chevron-right"></i> Reviews
             </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-chevron-right"></i> Partnership
-              </a>
+            <li onClick={navigateToPartnership} style={{ cursor: "pointer" }}>
+              <i className="fas fa-chevron-right"></i> Partnership
             </li>
           </ul>
         </div>
@@ -79,17 +75,15 @@ const FooterSection: React.FC = () => {
         {/* Get In Touch */}
         <div className={styles.contactSection}>
           <h4 className={styles.sectionTitle}>Get In Touch</h4>
-          <p>
-            Dolor clita stet nonumy clita diam vero, et et ipsum diam labore
-          </p>
+          <p>Have questions or need assistance? We’re here to help!</p>
           <p>
             <i className="fas fa-map-marker-alt"></i> 123 Street, New York, USA
           </p>
           <p>
-            <i className="fas fa-phone"></i> +012 345 67890
+            <i className="fas fa-phone"></i> +1-234-567-890
           </p>
           <p>
-            <i className="fas fa-envelope"></i> info@example.com
+            <i className="fas fa-envelope"></i> hello@wedeepclean.ca
           </p>
         </div>
       </div>
